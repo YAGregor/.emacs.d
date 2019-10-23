@@ -11,6 +11,9 @@
 
 (tool-bar-mode 0)
 
+(setq inhibit-startup-message t)
+(setq gnus-inhibit-startup-message t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -35,13 +38,6 @@
 (global-linum-mode t)
 
 (dashboard-setup-startup-hook)
-;; Or if you use use-package
-(use-package dashboard
-  :ensure t
-  :config
-  (dashboard-setup-startup-hook))
-
-(setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
 
 (setq dashboard-banner-logo-title "Happy Hacking!")
 
