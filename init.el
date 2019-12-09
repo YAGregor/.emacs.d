@@ -8,6 +8,8 @@
 (require 'all-the-icons)
 (require 'dashboard)
 (require 'use-package)
+(require 'evil)
+(require 'dracula-theme)
 
 (tool-bar-mode 0)
 
@@ -22,7 +24,7 @@
  '(markdown-command "pandoc -f markdown -t html -s --highlight-style espresso")
  '(package-selected-packages
    (quote
-    (dashboard all-the-icons neotree markdown-mode rainbow-delimiters dracula-theme))))
+    (evil-anzu dashboard all-the-icons neotree markdown-mode rainbow-delimiters dracula-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -42,4 +44,6 @@
 (setq dashboard-banner-logo-title "Happy Hacking!")
 
 (set-default 'truncate-lines t)
+
+(evil-mode 1)
 
